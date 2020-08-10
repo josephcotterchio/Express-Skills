@@ -26,5 +26,6 @@ function create(newSkill) {
 module.exports = {
     getAll: getAll,
     getOne: getOne,
-    create:create
+    create:create,
+    skills:skills
 };
