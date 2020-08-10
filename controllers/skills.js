@@ -31,7 +31,7 @@ function add(req, res) {
         skill: req.body.add
     }
     skillsExports.skills.push(skillnew)
-    res.send("Thank you for adding your new skill")
+    res.redirect("/skills")
 }
 
 module.exports ={
