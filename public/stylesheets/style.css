@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: salmon;
+  background-color: beige;
 }
 
 h1 {
@@ -15,6 +15,10 @@ a {
 
 p {
   text-align: center;
+}
+.remove {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 

@@ -7,6 +7,7 @@ router.get('/', skillCtrl.index);
 router.get('/show/:id', skillCtrl.show);
 router.get('/newskill', skillCtrl.newskill);
 router.post('/add', skillCtrl.add);
+router.delete('/:id', skillCtrl.deleteSkill);
 
 //router.delete('/:id', skillsCtrl.delete);
 

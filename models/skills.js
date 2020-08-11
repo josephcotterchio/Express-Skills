@@ -23,9 +23,16 @@ function create(newSkill) {
     skills.push(newskill);
 }
 
+function deleteSkill(id) {
+    // Find the index based on the id of the todo object
+    const idx = skills.findIndex(skill => skill.id === parseInt(id));
+    skills.splice(idx, 1);
+}
+
 module.exports = {
     getAll: getAll,
     getOne: getOne,
     create:create,
+    deleteSkill: deleteSkill,
     skills:skills
 };

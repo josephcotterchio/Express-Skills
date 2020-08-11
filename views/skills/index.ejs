@@ -14,7 +14,10 @@
        <% console.log(skills); %>
         <% skills.forEach(function(t) { %>
         <li>
-            <a href="/skills/show/<%= t.id %>"> <%= t.skill %> </a>
+            <a href="/skills/show/<%= t.id %>"> <%= t.skill %> </a> 
+            <form action="/skills/<%= t.id %>?_method=DELETE" method="POST" class="remove">
+                <button type="submit">X</button>
+            </form>
             -
             <%= t.done ? 'done' : 'not done' %>
         </li>

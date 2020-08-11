@@ -34,10 +34,16 @@ function add(req, res) {
     res.redirect("/skills")
 }
 
+function deleteSkill(req, res) {
+    skillsDb.deleteSkill(req.params.id);
+    res.redirect('/skills');
+}
+
 module.exports ={
     index: index,
     show: show,
     create: create,
     newskill: newskill,
-    add:add
+    add:add,
+    deleteSkill: deleteSkill
 }
